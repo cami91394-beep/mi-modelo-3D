@@ -9,17 +9,15 @@
   </script>
 
   <style>
-    html, body {
+    body {
       margin: 0;
-      width: 100%;
-      height: 100%;
+      padding: 0;
       overflow: hidden;
-      background: transparent;
     }
 
     model-viewer {
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background: transparent;
     }
   </style>
@@ -33,7 +31,11 @@
     loop
     camera-controls
     interaction-prompt="none"
-    shadow-intensity="0">
+    shadow-intensity="0"
+    camera-orbit="0deg 75deg 70%"
+    min-camera-orbit="auto auto 20%"
+    max-camera-orbit="auto auto 150%"
+    field-of-view="30deg">
   </model-viewer>
 
 </body>
